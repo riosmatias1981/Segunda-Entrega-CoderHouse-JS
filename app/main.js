@@ -43,7 +43,7 @@ const agregarCarrito = (objetoCarrito)=>{
 const mostrarCarrito = ()=>{
     // borra el contenido del carrito y lo muestra en una lista
     const listaCarrito = document.getElementById("listaCarrito")
-    // borramos para evitar clones viejos
+
     listaCarrito.innerHTML=""
     carrito.forEach(({nombre, precio, cantidad, id}) =>{
         let elementoLista = document.createElement("li")
